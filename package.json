@@ -1,0 +1,27 @@
+{
+  "name": "team-collab-pofoda",
+  "version": "1.0.0",
+  "description": "Obi, Rasmus T og Emil Z",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pofoda/team-collab-Pofoda.git"
+  },
+  "author": "Rasmus T, Obi & Emil Z",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pofoda/team-collab-Pofoda/issues"
+  },
+  "homepage": "https://github.com/Pofoda/team-collab-Pofoda#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.19.1"
+  }
+}
