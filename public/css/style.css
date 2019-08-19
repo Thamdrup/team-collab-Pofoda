@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    /* position: fixed; */
+    top: 0;
+    left: 0 !important;
+    right: 0 !important;
+}
+.banner img{
+    width: 100%;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    transition: .4s;
+    background: transparent !important;
+    top: 0;
+    z-index: 10;
+}
+.change{
+    color: #ffff !important;
+    background: #ffff !important;
+}
+
