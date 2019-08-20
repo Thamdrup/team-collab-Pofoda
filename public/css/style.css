@@ -3,6 +3,12 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+
 .box-shadow{
     box-shadow: 0px 0px 12px 0px #bdc3c7 !important;
 }
@@ -269,21 +275,18 @@ body{
   }
 
 
-/* Single product page (sp__) */
+  /* Single product page (sp__) */
 .sp__main__Container {
     display: flex;
-};
+}
 
 .sp__pic__container{
     width: 657px;
     height: 987px;
-};
-
-.sp__productinfo_container{
-
-};
-
+}
+.sp__productinfo__container{
+    margin-left: 20px;
+}
 .sp__color__container {
     display: flex;
-};
-
+}
