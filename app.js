@@ -32,7 +32,7 @@ require('./server/routes/routes.js')(app);
 app.use(express.static('public'));
 
 // start serveren på port 3000 
-const port = 3000;
+const port = 7000;
 app.listen(port, (error) => {
     if (error) console.log(error);
     console.log('\x1b[35m%s\x1b[0m', '================================================================'); // udskriver en lilla streg i konsol
