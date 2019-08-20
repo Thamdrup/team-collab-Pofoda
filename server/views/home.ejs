@@ -15,11 +15,20 @@
     
     <%- include('partials/navbar.ejs') %>
   
+    <section id="category">
+
+        <div class="category-title">
+            <h1>check all categories</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta porro et 
+                tempora illum tempore maiores nobis ducimus, incidunt similique!</p>
+        </div>
+    
       <div class="container pt-5">
           <div class="row">
               <div class="col-md-4">
                   <div class="category-1">
-                      <img src="/img/jeanswhite.jpg" alt="">
+                      <img src="/img/jeansblack.jpg" alt="">
                       <div class="category-1-link">
                           <a href="#">category</a>
                       </div>
@@ -28,7 +37,7 @@
          
               <div class="col-md-4">
                     <div class="category-1">
-                        <img src="/img/jeanswhite.jpg" alt="">
+                        <img src="/img/shoesmixed.jpg" alt="">
                         <div class="category-1-link">
                             <a href="#">category</a>
                         </div>
@@ -37,7 +46,7 @@
 
                 <div class="col-md-4">
                         <div class="category-1">
-                            <img src="/img/jeanswhite.jpg" alt="">
+                            <img src="/img/tshirtwhite.jpg" alt="">
                             <div class="category-1-link">
                                 <a href="#">category</a>
                             </div>
@@ -49,7 +58,7 @@
       <div class="row">
             <div class="col-md-4">
                 <div class="category-1">
-                    <img src="/img/jeanswhite.jpg" alt="">
+                    <img src="/img/hoodiepink.jpg" alt="">
                     <div class="category-1-link">
                         <a href="#">category</a>
                     </div>
@@ -58,7 +67,7 @@
        
             <div class="col-md-4">
                   <div class="category-1">
-                      <img src="/img/shoesmixed.jpg" alt="">
+                      <img src="/img/jacketred.jpg" alt="">
                       <div class="category-1-link">
                           <a href="#">category</a>
                       </div>
@@ -73,10 +82,17 @@
                           </div>
                       </div>
                   </div>
-            
     </div>
    
 </div>
+</section>
+
+ <section id="subscribe">
+        <%- include('partials/subscribe.ejs') %>
+ </section>
+
+
+ <%- include('partials/footer.ejs') %>
     <%- include('partials/js.ejs') %>
 </body>
 </html>

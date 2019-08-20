@@ -99,13 +99,14 @@ body{
     left: 0%;
     right: 0%;
     transition: .4s;
-    background: transparent !important;
+    background: #222222!important;
     top: 0;
     z-index: 10 !important;
     margin: auto;
     border-bottom: 2px solid transparent !important;
     border-image: linear-gradient(55deg, #f71f07, #f7e603);
     border-image-slice: 1;
+    box-shadow: 0px -4px 12px 0px #bdc3c7 !important;
 }
 .change{
     color: #ffff !important;
@@ -138,12 +139,36 @@ body{
 }
 
 /*style category-1 in home page*/
+.category-title{
+    background: #9d6122 !important;
+    height: 15vh;
+    padding: 10px;
+}
+.category-title h1{
+    color: #ffff;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.category-title p{
+    border-left: 4px solid white;
+    padding: 10px;
+    margin-left: 20px;
+   color: white;
+}
+#category{
+    background: #bdc3c7 !important;
+    height: 100%;
+    width: 100%;
+}
 .category-1{
     overflow: hidden !important;
     width: 100% !important;
-    background: rgba(174,130,63);
+    background: #000;
     height: 90% !important;
-    
+    box-shadow: 0px 0px 12px 0px #bdc3c7 !important;
 }
 .category-1 img{
     background-position: center;
@@ -186,6 +211,85 @@ body{
     text-decoration: none !important;
 }
 
+
+
+/*style my subscribe form*/
+#subscribe{
+    background: #9d6122;
+    padding: 20px;
+   
+}
+#subscribe-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 4px 0px #080808 !important;
+    width: 700px;
+    margin: auto;
+    border-radius: 25px;
+}
+#subscribeEmail{
+    width: 600px !important;
+    padding: 10px !important;
+    border-radius: 25px;
+    border: 2px solid white;
+    outline: none !important;
+
+}
+#subscribeSubmit{
+    width: 150px;
+    border: 2px soild white;
+    background: #222222 !important;
+    padding: 10px !important;
+    margin-left: -40px !important;
+    border-radius: 25px;
+   color: white;
+   outline: none !important;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+
+/*style footer*/
+footer{
+    background: #222222;
+    height: 40vh;
+    color: #9d6122;
+}
+.footer-items h1{
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px !important;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+}
+.footer-text{
+    border-left: 4px solid #ba6617;
+    padding-left: 6px;
+    text-align: justify;
+    word-break: break-all;
+    margin-top: 20px;
+    font-size: 17px !important;
+}
+.footer-items h4{
+    margin-top: 20px;
+    font-size: 17px !important;
+    text-align: center;
+}
+.footer-items{
+    list-style: none;
+}
+.footer-items li{
+    text-align: center;
+    
+}
+.footer-items li a{
+    text-decoration: none;
+    color: #ba6617;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
 @media (min-width:360px) and (max-width:400px){
     .navbar{
         background-color: rgb(236, 17, 17) !important;
