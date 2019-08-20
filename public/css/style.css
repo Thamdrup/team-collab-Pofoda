@@ -19,9 +19,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.banner img{
-    width: 100%;
-}
+
 .banner-title{
     position: absolute !important;
     top: 50%;
@@ -138,12 +136,65 @@ body{
     width: 180px;
     height: 50px;
 }
+
+/*style category-1 in home page*/
+.category-1{
+    overflow: hidden !important;
+    width: 100% !important;
+    background: rgba(174,130,63);
+    height: 90% !important;
+    
+}
+.category-1 img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    max-height: 100%!important;
+    max-width: 100% !important;
+     position: relative !important;
+    transform: scale(1.08);
+    opacity: 0.4;
+    transition: 0.75s !important;
+     width: 100% !important;
+     height: 100% !important;
+}
+.category-1 img:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.category-1-link{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(174,130,63);
+    width: 150px;
+    padding: 10px;
+    border-radius: 25px;
+    
+}
+.category-1-link a{
+    color: #ffffff !important;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+
 @media (min-width:360px) and (max-width:400px){
     .navbar{
         background-color: rgb(236, 17, 17) !important;
         width: 100% !important;
         left: 0;
         right: 0;
+    }
+    .banner{
+        height: 80vh;
     }
 }
 
