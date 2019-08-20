@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 19, 2019 at 09:27 AM
+-- Generation Time: Aug 20, 2019 at 02:49 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -30,20 +30,21 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `categories` (
   `category_id` int(11) NOT NULL,
-  `category_title` varchar(64) CHARACTER SET utf8 NOT NULL
+  `category_title` varchar(64) CHARACTER SET utf8 NOT NULL,
+  `category_text` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `categories`
 --
 
-INSERT INTO `categories` (`category_id`, `category_title`) VALUES
-(1, 'T-Shirt'),
-(2, 'Shirt'),
-(3, 'Jeans'),
-(4, 'Hoodie'),
-(5, 'Jacket'),
-(6, 'Shoes');
+INSERT INTO `categories` (`category_id`, `category_title`, `category_text`) VALUES
+(1, 'T-Shirt', 'Stock up on t-shirts and vests for easy everyday dressing. We have long-sleeves, short-sleeves, tanks and hoodies – from clean and classic basics to prints and bold colors for modern edge.'),
+(2, 'Shirt', 'Well cut shirts for every occasion and style. Clean and sharp shirts for office days – casual and comfy shirts for a relaxed weekend look'),
+(3, 'Jeans', 'Our jeans come in all styles and shapes with a wide range of fits – from classic straight cuts in blue to black skinny jeans. Choose from light to dark washes with distressed or dressed finishes.'),
+(4, 'Hoodie', 'Great hoodies and sweatshirts for a sporty and casual look. Find your favorite sweaters, zipped jackets and hooded sweatshirts – in new colors, neutrals or prints.'),
+(5, 'Jacket', 'Jackets and vests are easy ways to alter your look. Discover new styles among our selection of outerwear – in many different colors and new prints.'),
+(6, 'Shoes', 'Upgrade your style with new shoes – we have everything from quality leather shoes to sporty sneakers, laid-back canvas shoes and sandals. Opt for classic shoes or the new styles of the season.');
 
 -- --------------------------------------------------------
 

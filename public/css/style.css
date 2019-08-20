@@ -285,15 +285,21 @@ body{
     width: 100%;
 }
 .sidenav_h2{
-    font-size: 1.3em; 
+    font-size: 1.4em; 
     text-align: center;
 }
+.sidenav_ul{
+    margin-top: 2.4em;
+}
 .sidenav_li{
+    margin: .6em 0 0 1em;
     list-style: none;
+    font-size: 1.2em;
 }
 .products_grid_main{
     display: grid;
     grid-template-columns: 15% 85%;
+    margin-top: 3em;
 }
 
 .card_container{
