@@ -216,4 +216,23 @@ body{
     }
   
   }
-  
+
+
+/* Single product page (sp__) */
+.sp__main__Container {
+    display: flex;
+};
+
+.sp__pic__container{
+    width: 657px;
+    height: 987px;
+};
+
+.sp__productinfo_container{
+
+};
+
+.sp__color__container {
+    display: flex;
+};
+

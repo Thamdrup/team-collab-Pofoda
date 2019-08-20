@@ -20,7 +20,7 @@ module.exports = (app) => {
 
     app.get('/singleProduct', async(req,res,next)=>{
 
-        res.render('collection.ejs',{
+        res.render('singleProduc.ejs',{
             "title": "Fabion",
             pageLink: "singleProduct"
         })
