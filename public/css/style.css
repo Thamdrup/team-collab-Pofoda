@@ -622,3 +622,8 @@ footer{
     /* grid-gap: 1em; */
     /* padding: 1em; */
 }
+
+.card_container a {
+    text-decoration: none;
+    color: #000;
+}
