@@ -37,7 +37,7 @@ body{
     text-align: center;
    
 }
-.Banner-title h1{
+.homeBanner-title h1{
     font-weight: 900;
     text-transform: uppercase;
     color: rgba(174,130,63);
@@ -80,12 +80,44 @@ body{
 }
 
 
+/*style contact page banner*/
+.contactBanner{
+    position: relative;
+    top: 0;
+    left: 0 !important;
+    right: 0 !important;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+     url('https://images.pexels.com/photos/2068664/pexels-photo-2068664.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    height: 50vh;
+    width: 100%;
+    background-position:top, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contactBanner-title{
+    position: absolute !important;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+   
+}
+.contactBanner-title h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(174,130,63);
+    letter-spacing: 1px;
+    font-size: 45px;
+}
 
 /*banner button*/
 #four{
     position: relative;
     transition-duration: 0.4s;
-    width: 170px !important;
+    width: 200px !important;
     border: 2px solid #ffffff;
     padding: 14px !important;
     font-weight: 600;
@@ -291,10 +323,12 @@ body{
 
 /*style my contact form*/
 .contact-form{
-    max-width:1170px;
+    max-width:1570px;
     margin-left:auto;
     margin-right:auto;
     padding:1em;
+    margin-top: -15.6px;
+    margin-bottom: -14px;
   }
   
   ul{
