@@ -25,6 +25,16 @@ module.exports = (app) => {
         })
     })
 
+    app.get('/about', async(req,res,next)=>{
+
+        res.render('about.ejs',{
+            "title": "Fabion",
+            pageLink: "about"
+        })
+    })
+
+
+
     app.get('/singleProduct/:product_id', async(req,res,next)=>{
         let db = await mysql.connect();
 
