@@ -479,7 +479,11 @@ footer{
     font-size: 17px;
     letter-spacing: 1px;
 }
-
+#footer-border{
+    border-top: 2px solid #d9680b;
+    width: 100% !important;
+    margin-top: 14px;
+}
 .btnScrollTop{
     position: fixed;
     bottom: 10% !important;
