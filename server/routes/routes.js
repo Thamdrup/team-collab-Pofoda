@@ -13,9 +13,16 @@ module.exports = (app) => {
     });
 
     app.get('/collection', async(req,res,next)=>{
+        let db = await mysql.connect();
+        let [categories] = await db.execute('SELECT * FROM categories');
+        let [products] = await db.execute('SELECT * FROM products');
+
+        db.end();
 
         res.render('collection.ejs',{
             "title": "Fabion",
+            "categories": categories,
+            "products": products,
             pageLink: "collection"
         })
     })
