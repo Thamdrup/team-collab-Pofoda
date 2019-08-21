@@ -12,7 +12,58 @@
     <div class="box-shadow">
         <%- include('partials/navbar.ejs') %>
 
-        <h1>contact page</h1>
+      
+        <div class="contact-form">
+                <h1 class="brand">contact us</h1>
+                <div class="wrapper animated bounceInLeft">
+                  <div class="company-info">
+                    <h3>contact information</h3>
+                    <ul>
+                      <li><i class="fa fa-road"></i> Roskilde 4000</li>
+                      <li><i class="fa fa-phone"></i>&nbsp;+4553848555</li>
+                      <li><i class="fa fa-envelope">&nbsp;</i>Fabion@gmail.com</li>
+                    </ul>
+                  </div>
+                  <div class="contact">
+                    <h3>Email Us</h3>
+                    <form action="" method="POST" id="contactForm">
+                      <p>
+                        <label>FullName</label>
+                        <input type="text" name="name" id="FullName">
+                        <span class="errorMessage"></span>
+                      </p>
+                      
+                      <p>
+                        <label>Email</label>
+                        <input type="text" name="Email" id="Email">
+                        <span class="errorMessage"></span>
+                      </p>
+                      
+                      <p>
+                        <label>Phone Number</label>
+                        <input type="phoneNumber" name="PhoneNumber" id="PhoneNumber">
+                        <span class="errorMessage"></span>
+                      </p>
+                     
+                      <p>
+                        <label>Address</label>
+                        <input type="Address" name="Address" id="Address">
+                        <span class="errorMessage"></span>
+                      </p>
+                     
+                      <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" id="MessageBox"></textarea>
+                        <span class="errorMessage"></span>
+                      </p>
+                      
+                      <p class="full">
+                        <button>Submit</button>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
     </div>
         
 
