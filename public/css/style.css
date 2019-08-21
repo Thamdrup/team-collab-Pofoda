@@ -479,6 +479,28 @@ footer{
     font-size: 17px;
     letter-spacing: 1px;
 }
+#footer-border{
+    border-top: 2px solid #d9680b;
+    width: 100% !important;
+    margin-top: 14px;
+}
+.btnScrollTop{
+    position: fixed;
+    bottom: 10% !important;
+    right: 1% !important;
+    width: 68px;
+    height: 68px;
+    border-radius: 50% !important;
+    background: #d9680b !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    outline: none !important;
+    border: 1px solid white;
+}
+.btnScrollTop span{
+     text-transform: capitalize;
+     font-weight: 500;
+    color: #fff;
+}
 @media (min-width:360px) and (max-width:400px){
     .navbar{
         background-color: rgb(236, 17, 17) !important;
