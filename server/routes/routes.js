@@ -58,7 +58,7 @@ module.exports = (app) => {
 
     app.get('/contact', async(req,res,next)=>{
 
-        res.render('collection.ejs',{
+        res.render('contact.ejs',{
             "title": "Fabion",
             pageLink: "contact"
         })
