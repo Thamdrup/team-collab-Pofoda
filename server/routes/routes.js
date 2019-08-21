@@ -3,8 +3,6 @@ const mysql = require('../config/mysql');
 module.exports = (app) => {
 
     app.get('/', async (req, res, next) => {
-       
-
         
         res.render('home.ejs', {
             "title": "Fabion",
@@ -29,7 +27,7 @@ module.exports = (app) => {
 
     app.get('/singleProduct', async(req,res,next)=>{
 
-        res.render('collection.ejs',{
+        res.render('singleProduct.ejs',{
             "title": "Fabion",
             pageLink: "singleProduct"
         })
