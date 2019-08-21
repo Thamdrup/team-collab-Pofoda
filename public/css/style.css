@@ -254,7 +254,122 @@ body{
    letter-spacing: 1px;
 }
 
-
+/*style my contact form*/
+.contact-form{
+    max-width:1170px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1em;
+  }
+  
+  ul{
+    list-style: none;
+    padding:0;
+  }
+  
+  .brand{
+    text-align: center;
+  }
+  
+  .brand span{
+    color:#fff;
+  }
+  
+  .wrapper{
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+  }
+  
+  .wrapper > *{
+    padding: 1em;
+  }
+  
+  .company-info{
+    background:#ba6617;
+  }
+  
+  .company-info h3, .company-info ul{
+    text-align: center;
+    margin:0 0 1rem 0;
+  }
+  .company-info h3{
+      color: #fff;
+      text-transform: capitalize;
+  }
+  .company-info ul li{
+      margin-top: 10px;
+  }
+  .contact{
+    background:#f9feff;
+  }
+  
+  .wrong-input{
+      border: 1px solid red !important;
+      animation: shake 0.5s !important;
+      animation-iteration-count: 2 !important;
+      
+  }
+  @keyframes shake{
+      10%, 90%{
+          transform: translate3d(-1px, 0, 0) !important;
+      }
+  }
+  .errorMessage{
+      color: red !important;
+  }
+  /* FORM STYLES */
+  .contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+  }
+  
+  .contact form label{
+    display:block;
+  }
+  
+  .contact form p{
+    margin:0;
+  }
+  
+  .contact form .full{
+    grid-column: 1 / 3;
+  }
+  
+  .contact form button, .contact form input, .contact form textarea{
+    width:100%;
+    padding:1em;
+    border:1px solid #9d6122;
+  }
+  
+  .contact form button{
+    background:#ba6617;
+    border:0;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .contact form button:hover,.contact form button:focus{
+    background:#825a2c;
+    color:#fff;
+    outline:0;
+    transition: background-color 2s ease-out;
+  }
+  
+  /* LARGE SCREENS */
+  @media(min-width:700px){
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .wrapper > *{
+      padding:2em;
+    }
+  
+    .company-info h3, .company-info ul, .brand{
+      text-align: left;
+    }
+  }
 /*style footer*/
 footer{
     background: #222222;
