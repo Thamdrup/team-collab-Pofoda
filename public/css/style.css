@@ -12,7 +12,7 @@ body{
 .box-shadow{
     box-shadow: 0px 0px 12px 0px #bdc3c7 !important;
 }
-.banner{
+.homeBanner{
     position: relative;
     top: 0;
     left: 0 !important;
@@ -26,7 +26,7 @@ body{
     background-size: cover;
 }
 
-.banner-title{
+.homeBanner-title{
     position: absolute !important;
     top: 50%;
     left: 50%;
@@ -37,13 +37,48 @@ body{
     text-align: center;
    
 }
-.banner-title h1{
+.Banner-title h1{
     font-weight: 900;
     text-transform: uppercase;
     color: rgba(174,130,63);
     letter-spacing: 1px;
     font-size: 45px;
 }
+
+
+/*style collection page banner*/
+.collectionBanner{
+    position: relative;
+    top: 0;
+    left: 0 !important;
+    right: 0 !important;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+     url('https://images.pexels.com/photos/291762/pexels-photo-291762.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    height: 50vh;
+    width: 100%;
+    background-position:top, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.collectionBanner-title{
+    position: absolute !important;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+   
+}
+.collectionBanner-title h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(174,130,63);
+    letter-spacing: 1px;
+    font-size: 45px;
+}
+
 
 
 /*banner button*/
