@@ -3,28 +3,27 @@
         <div class="sp__main__Container">
             <div class="sp__pic__container">
                 <!-- billed-->
-                <img src="/img/hoodieyellow.jpg" alt="">
+                <img src="/img/<%=product_by_id.product_image%>" alt="">
             </div>
 
-            <div class="sp__productinfo__container">
-                <h3>Name</h3>
-                <h4>Price</h4>
-                <select>
-                    <option value="">Color options</option>
-                    <option value="blue">Blue</option>
-                    <option value="red">Red</option>
-                </select>
-                <form action="">
-                    <select>
-                        <option value="" selected data-default>choose Size</option>
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                    </select> <br>
-                    <button>Add to cart</button>
-                </form>
-            </div>
-        </div>
-        <p>Beskrivelse</p>
+
+                    <div class="sp__productinfo__container">
+                        <h3><%= product_by_id.product_title %></h3>
+                        <h4><%= product_by_id.product_price %></h4>
+                        <h5>Color: <%= product_by_id.product_color %></h5>
+                        <form action="post">
+                            <select>
+                                <option value="" selected data-default>choose Size</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                            </select> <br>
+                            <button>Add to cart</button>
+                        </form>
+                    </div>
+                </div>
+                <p>Description: <%= product_by_id.product_text %></p>
+
 
             <div>
                 <!-- realaterede (shop-cards)-->
