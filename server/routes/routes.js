@@ -25,11 +25,17 @@ module.exports = (app) => {
         })
     })
 
-    app.get('/singleProduct', async(req,res,next)=>{
+    app.get('/singleProduct/:product_id', async(req,res,next)=>{
+        let db = await mysql.connect();
 
+        let [products_by_id] = await db.execute('SELECT * FROM products WHERE product_id = ?', [req.params.product_id]);
+        console.log(products_by_id);
+        
+        db.end();
         res.render('singleProduct.ejs',{
             "title": "Fabion",
-            pageLink: "singleProduct"
+            "pageLink": "singleProduct",
+            "product_by_id": products_by_id[0]
         })
     })
 
@@ -38,7 +44,7 @@ module.exports = (app) => {
 
         res.render('collection.ejs',{
             "title": "Fabion",
-           
+        
         })
     })
 
@@ -47,7 +53,7 @@ module.exports = (app) => {
 
         res.render('collection.ejs',{
             "title": "Fhopping",
-          
+        
         })
     })
 

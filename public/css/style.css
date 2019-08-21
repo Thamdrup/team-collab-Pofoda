@@ -389,11 +389,14 @@ footer{
 }
 .sp__productinfo__container{
     margin-left: 20px;
+    width: 300px;
 }
 .sp__color__container {
     display: flex;
 }
-  .product_card{
+
+/* xxx */
+.product_card{
     text-align: center;
     width: 290px;
     margin: .5em;
