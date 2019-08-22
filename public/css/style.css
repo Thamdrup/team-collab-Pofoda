@@ -85,6 +85,9 @@ body{
     margin-left: 1em;
     text-decoration: none !important;
 }
+.article_aboutus{
+    margin: 6em 0 7em 0
+}
 
 /*style collection page banner*/
 .collectionBanner{
