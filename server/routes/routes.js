@@ -101,4 +101,18 @@ module.exports = (app) => {
             pageLink: "contact"
         })
     })
+
+
+    app.post('/contact', async(req,res)=>{
+      
+        let FullName = req.body.FullName;
+        let Email = req.body.Email;
+        let PhoneNumber = req.body.PhoneNumber;
+        let Address = req.body.Address;
+        let MessageBox = req.body.MessageBox;
+          console.log(req.body)
+        res.render('contact.ejs',{
+
+        })
+    })
 };
