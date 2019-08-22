@@ -80,7 +80,11 @@ body{
     letter-spacing: 1px;
     font-size: 45px;
 }
-
+.collection_product_link{
+    color: black !important;
+    margin-left: 1em;
+    text-decoration: none !important;
+}
 
 /*style collection page banner*/
 .collectionBanner{
@@ -524,11 +528,11 @@ footer{
     position: fixed;
     bottom: 10% !important;
     right: 1% !important;
-    width: 68px;
-    height: 68px;
+    width: 50px;
+    height: 50px;
     border-radius: 50% !important;
     background: #d9680b !important;
-    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    box-shadow: 0 0 8px rgba(0,0,0,0.7);
     outline: none !important;
     border: 1px solid white;
 }

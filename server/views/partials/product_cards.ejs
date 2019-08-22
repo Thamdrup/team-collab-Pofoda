@@ -5,26 +5,15 @@
     <div class="sidenav">
         <h2 class="sidenav_h2">Choose Category</h2>
         <ul class="sidenav_ul">
-            <% categories.forEach(category =>{ %>
-                <li class="sidenav_li"><%=category.category_title %></li>
-            <% }); %>
-
-
-
-
             <% if(typeof categories != 'undefined'){ %>
                 <% categories.forEach(category =>{ %>
-                    <li class="sidenav_li"><a href="/collection/<%=category.category_id %>"><%=category.category_title %></a></li>
+                    <li class="sidenav_li"><a class="collection_product_link" href="/collection/<%=category.category_id %>"><%=category.category_title %></a></li>
                 <% }); %>
             <% } %>
-
-
-
-
     </ul>
     </div>
-    <div class="card_container">
 
+    <div class="card_container">
             <% if(typeof products != 'undefined'){ %>
                 <% products.forEach(product =>{ %>
                 <a href="/singleProduct/<%= product.product_id %>">
@@ -34,7 +23,6 @@
                             <p class="product_price"><%=product.product_price %> kr</p>
                             
                         </div>
-
                 </a>
                 <% }); %>
             <% } %>
