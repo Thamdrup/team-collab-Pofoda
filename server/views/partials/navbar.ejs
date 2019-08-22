@@ -4,13 +4,15 @@
         <a class="navbar-brand" href="#">
           <img src="http://demo.ishithemes.com/opencart/OPC023/image/catalog/Logo.png" alt="">
         </a>
+       
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           
           <span class="fas fa-align-right"></span>
         </button>
       
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav m-auto">
             <li class="nav-item <%= (typeof pageLink != 'undefined' && pageLink == 'home' ? 'active' : '') %> ">
               <a class="nav-link" href="/">Home</a>
             </li>
@@ -35,6 +37,14 @@
               <a class="nav-link" href="/contact">contact</a>
             </li>
           </ul>
-          
+          <!-- <a href="" class="shopping-cart mr-auto">
+              <i class="fas fa-shopping-cart "></i>
+          </a> -->
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+              <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+              <p class="mb-0 text-capitalize"><span id="item-count">2 </span> items - $<span class="item-total">10.49</span></p>
+            </div>
         </div>
+
+       
       </nav>
