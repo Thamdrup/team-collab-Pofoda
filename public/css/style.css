@@ -81,12 +81,22 @@ body{
     font-size: 45px;
 }
 .collection_product_link{
+
+    color: #f9feff !important;
+    /* margin-left: 1em; */
+    text-decoration: none !important;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+
     color: black !important;
     margin-left: 1em;
     text-decoration: none !important;
 }
 .article_aboutus{
     margin: 6em 0 7em 0
+
 }
 
 /*style collection page banner*/
@@ -330,9 +340,9 @@ body{
 
 /*style my subscribe form*/
 #subscribe{
-    background: #9d6122;
+    background: #d9680b;
     padding: 20px;
-   
+    border-bottom: 2px solid white;
 }
 #subscribe-form{
     display: flex;
@@ -396,7 +406,7 @@ body{
   }
   
   .company-info{
-    background:#ba6617;
+    background:#d9680b;
   }
   
   .company-info h3, .company-info ul{
@@ -450,7 +460,7 @@ body{
   .contact form button, .contact form input, .contact form textarea{
     width:100%;
     padding:1em;
-    border:1px solid #9d6122;
+    border:1px solid #d9680b;
   }
   
   .contact form button{
@@ -659,21 +669,40 @@ footer{
     margin: .4em;
 }
 .sidenav{
-    height: 100%;
+    max-height: 1138px;
     width: 100%;
+    background: #d9680b;
+    margin-top: -48px !important;
 }
 .sidenav_h2{
-    font-size: 1.4em; 
+    font-size: 20px; 
     text-align: center;
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.underline{
+    border-bottom: 2px solid white;
+    width: 100px;
+    margin: auto;
 }
 .sidenav_ul{
-    margin-top: 2.4em;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .sidenav_li{
-    margin: .6em 0 0 1em;
+    margin-top: 10px;
     list-style: none;
-    font-size: 1.2em;
+    font-size: 20px;
+    color: #d9680b !important;
+   
 }
+
 .products_grid_main{
     display: grid;
     grid-template-columns: 15% 85%;
@@ -683,12 +712,32 @@ footer{
 .card_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 4em;
+    margin-top: -50px;
     /* grid-gap: 1em; */
     /* padding: 1em; */
+    box-shadow: 0 0 -5px 0 #000;
+    height: 100%;
 }
 
 .card_container a {
     text-decoration: none;
-    color: #000;
+    color: #f9feff;
+    text-transform: capitalize;
+    box-shadow: 0 0 6px 0 #bdc3c7;
+    margin-top: 30px;
+    width: 300px !important;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.product_card img{
+    max-width: 100% !important;
+   padding-right: 6px;
+}
+.card-bg{
+    background: #d9680b;
+    max-width: 94.5% !important;
+    margin: auto !important;
+    margin-right: 11px !important;
+    margin-top: -5.8px !important;
+    padding: 8px;
 }

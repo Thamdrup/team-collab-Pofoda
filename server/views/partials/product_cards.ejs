@@ -4,6 +4,7 @@
 <main class="products_grid_main">
     <div class="sidenav">
         <h2 class="sidenav_h2">Choose Category</h2>
+        <div class="underline"></div>
         <ul class="sidenav_ul">
             <% if(typeof categories != 'undefined'){ %>
                 <% categories.forEach(category =>{ %>
@@ -19,10 +20,14 @@
                 <a href="/singleProduct/<%= product.product_id %>">
                     <div class="product_card">
                             <img src="/img/<%=product.product_image %>" alt="" class="product_card_img">
+                            <div class="card-bg">
                             <p class="product_name"><%=product.product_title %></p>
                             <p class="product_price"><%=product.product_price %> kr</p>
-                            
                         </div>
+
+                        </div>
+
+
                 </a>
                 <% }); %>
             <% } %>
