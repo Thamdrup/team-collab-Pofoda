@@ -33,7 +33,6 @@ module.exports = (app) => {
             "title": "Fabion",
             "categories": categories,
             "products": products,
-            "choose_category": choose_category[0],
             pageLink: "collection",
             
 
@@ -62,7 +61,7 @@ module.exports = (app) => {
         res.render('singleProduct.ejs',{
             "title": "Fabion",
             "pageLink": "singleProduct",
-            "product_by_id": products_by_id[1],
+            "product_by_id": products_by_id[0],
             
         })
     })
