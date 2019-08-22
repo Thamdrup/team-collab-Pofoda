@@ -20,18 +20,13 @@
 
             <h1>About Us</h1>
         </div>
-
-        <section id="subscribe">
-            <%- include('partials/subscribe.ejs') %>
-        </section>
-
         <main>
             <div>
                 <!-- Video-div/container -->
                 
             </div>
             <div id="wrapper">
-                <article>
+                <article class="article_aboutus">
                     <h2>Who we are</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus voluptatem nihil? Minima
@@ -41,7 +36,9 @@
                 </article>
             </div>
         </main>
-
+        <section id="subscribe">
+            <%- include('partials/subscribe.ejs') %>
+        </section>
         <%- include('partials/footer.ejs') %>
 
         <%- include('partials/js.ejs') %>
