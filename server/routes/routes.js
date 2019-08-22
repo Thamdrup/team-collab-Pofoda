@@ -26,8 +26,7 @@ module.exports = (app) => {
     app.get('/collection/:category_id', async(req,res,next)=>{
         let db = await mysql.connect();
         let [categories] = await db.execute('SELECT * FROM categories');
-        let [products] = await db.execute('SELECT * FROM products');
-        let [choose_category] = await db.execute('SELECT * FROM products INNER JOIN categories ON category_id = fk_category_id WHERE category_id = ?', [req.params.category_id]);
+        let [products] = await db.execute('SELECT * FROM products INNER JOIN categories ON category_id = fk_category_id WHERE category_id = ?', [req.params.category_id]);
         db.end();
 
         res.render('collection.ejs',{
@@ -37,6 +36,7 @@ module.exports = (app) => {
             "choose_category": choose_category[0],
             pageLink: "collection",
             
+
         })
     })
 
