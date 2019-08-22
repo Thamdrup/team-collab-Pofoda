@@ -81,6 +81,7 @@ body{
     font-size: 45px;
 }
 .collection_product_link{
+
     color: #f9feff !important;
     /* margin-left: 1em; */
     text-decoration: none !important;
@@ -88,6 +89,14 @@ body{
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
+
+    color: black !important;
+    margin-left: 1em;
+    text-decoration: none !important;
+}
+.article_aboutus{
+    margin: 6em 0 7em 0
+
 }
 
 /*style collection page banner*/
