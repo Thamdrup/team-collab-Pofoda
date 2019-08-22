@@ -10,11 +10,14 @@
 </head>
 <body>
     <div class="box-shadow">
+      <div class="contactBanner">
+          <%- include('partials/contactBanner.ejs') %>
+      </div>
         <%- include('partials/navbar.ejs') %>
 
-      
+        
         <div class="contact-form">
-                <h1 class="brand">contact us</h1>
+                
                 <div class="wrapper animated bounceInLeft">
                   <div class="company-info">
                     <h3>contact information</h3>
@@ -66,7 +69,9 @@
               </div>
     </div>
         
-
+    <div class="scrollToTop">
+        <%- include('partials/scrollToTop.ejs') %>
+</div>
 
     <%- include('partials/footer.ejs') %>
 

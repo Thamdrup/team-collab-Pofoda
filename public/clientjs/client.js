@@ -93,6 +93,18 @@ document.addEventListener('DOMContentLoaded', (event)=>{
     document.getElementById("contactForm").onsubmit = validateForms;
     
 }
+
+
+//SCROLL TO THE TOP OF THE PAGE BUTTON
+let scrollToTop = document.querySelector(".btnScrollTop");
+scrollToTop.addEventListener('click', function(){
+  window.scrollTo({
+    top:0,
+    left:0,
+    behavior: "smooth"
+
+  })
+})
  
 })
 
