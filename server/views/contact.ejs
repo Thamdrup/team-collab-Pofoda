@@ -32,31 +32,31 @@
                     <form action="/contact" method="POST" id="contactForm">
                       <p>
                         <label>FullName</label>
-                        <input type="text" name="name" id="FullName">
+                        <input type="text" name="name" id="FullName"  value="<%= typeof values != 'undefined' ? values.FullName : '' %>">
                         <span class="errorMessage"></span>
                       </p>
                       
                       <p>
                         <label>Email</label>
-                        <input type="text" name="Email" id="Email">
+                        <input type="text" name="Email" id="Email" value="<%= typeof values != 'undefined' ? values.Email : '' %>">
                         <span class="errorMessage"></span>
                       </p>
                       
                       <p>
                         <label>Phone Number</label>
-                        <input type="phoneNumber" name="PhoneNumber" id="PhoneNumber">
+                        <input type="phoneNumber" name="PhoneNumber" id="PhoneNumber" value="<%= typeof values != 'undefined' ? values.PhoneNumber : '' %>">
                         <span class="errorMessage"></span>
                       </p>
                      
                       <p>
                         <label>Address</label>
-                        <input type="Address" name="Address" id="Address">
+                        <input type="Address" name="Address" id="Address" value="<%= typeof values != 'undefined' ? values.Address : '' %>">
                         <span class="errorMessage"></span>
                       </p>
                      
                       <p class="full">
                         <label>Message</label>
-                        <textarea name="message" rows="5" id="MessageBox"></textarea>
+                        <textarea name="message" rows="5" id="MessageBox" value="<%= typeof values != 'undefined' ? values.MessageBox : '' %>"></textarea>
                         <span class="errorMessage"></span>
                       </p>
                       
