@@ -39,7 +39,7 @@ body{
     cursor: pointer;
   }
   .cart-info:hover {
-    background: #ba6617;
+    background: #fa6800;
     border-color: wheat;
     color: wheat;
   }
@@ -60,7 +60,7 @@ body{
 .homeBanner-title h1{
     font-weight: 900;
     text-transform: uppercase;
-    color: rgba(174,130,63);
+    color: #fa6800;
     letter-spacing: 1px;
     font-size: 45px;
 }
@@ -113,7 +113,7 @@ body{
 .collectionBanner-title h1{
     font-weight: 900;
     text-transform: uppercase;
-    color: rgba(174,130,63);
+    color: #fa6800;
     letter-spacing: 1px;
     font-size: 45px;
 }
@@ -147,11 +147,41 @@ body{
 .contactBanner-title h1{
     font-weight: 900;
     text-transform: uppercase;
-    color: rgba(174,130,63);
+    color: #fa6800;
     letter-spacing: 1px;
     font-size: 45px;
 }
-
+.aboutBanner{
+    position: relative;
+    top: 0;
+    left: 0 !important;
+    right: 0 !important;
+    background-image:linear-gradient(135deg, rgba(0, 0, 0, 0.8),rgba(0,0, 0, 0.8) 100%),
+     url('https://images.pexels.com/photos/2068664/pexels-photo-2068664.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    height: 50vh;
+    width: 100%;
+    background-position:top, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aboutBanner-title{
+    position: absolute !important;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+   
+}
+.aboutBanner-title h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fa6800;
+    letter-spacing: 1px;
+    font-size: 45px;
+}
 /*banner button*/
 #four{
     position: relative;
@@ -210,7 +240,7 @@ body{
     left: 0%;
     right: 0%;
     transition: .4s;
-    background: #222222!important;
+    background: transparent!important;
     top: 0;
     z-index: 10 !important;
     margin: auto;
@@ -235,7 +265,7 @@ body{
     letter-spacing: 1px;
 }
 .nav-item.active .nav-link{
-    color: rgba(174,130,63)!important;
+    color: #fa6800!important;
     text-transform: uppercase !important;
     border-bottom: 2px solid transparent !important;
     border-image: linear-gradient(55deg, #f71f07, #f7e603);
@@ -422,6 +452,8 @@ body{
   }
   .errorMessage{
       color: red !important;
+      text-transform: capitalize;
+      
   }
   /* FORM STYLES */
   .contact form{

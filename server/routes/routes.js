@@ -34,8 +34,6 @@ module.exports = (app) => {
             "categories": categories,
             "products": products,
             pageLink: "collection",
-            
-
         })
     })
 
@@ -103,7 +101,7 @@ module.exports = (app) => {
     })
 
 
-    app.post('/contact', async(req,res)=>{
+    app.post('/contact',(req,res)=>{
       
         let FullName = req.body.FullName;
         let Email = req.body.Email;
@@ -111,8 +109,15 @@ module.exports = (app) => {
         let Address = req.body.Address;
         let MessageBox = req.body.MessageBox;
         
-        res.render('contact.ejs',{
+        if(FullName === 'undefined' || FullName == ''){
+            valid = false;
+           
+        }
 
+        console.log(req.body)
+        
+        res.render('contact.ejs',{
+           'value':req.body
         })
     })
 };
