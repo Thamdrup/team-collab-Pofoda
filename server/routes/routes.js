@@ -110,7 +110,7 @@ module.exports = (app) => {
         let PhoneNumber = req.body.PhoneNumber;
         let Address = req.body.Address;
         let MessageBox = req.body.MessageBox;
-          console.log(req.body)
+         
         res.render('contact.ejs',{
 
         })
