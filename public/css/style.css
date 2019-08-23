@@ -728,13 +728,23 @@ footer{
 
 
   /* Single product page (sp__) */
+  #wrapper{
+      margin-top: 5em;
+      margin-bottom: 4em;
+  }
 .sp__main__Container {
-    display: flex;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important
 }
 
 .sp__pic__container{
-    width: 657px;
-    height: 987px;
+    width: 600px;
+    height: 600px;
+}
+.sp__pic__container img{
+    height: 100%;
+    width: 86%;
 }
 .sp__productinfo__container{
     margin-left: 20px;
