@@ -9,18 +9,18 @@
 
                     <div class="sp__productinfo__container">
                         <h3><%= product_by_id.product_title %></h3>
-                        <h4><%= product_by_id.product_price %></h4>
+                        <h4>$ <%= product_by_id.product_price %></h4>
                         <h5>Color: <%= product_by_id.product_color %></h5>
                         <form action="post">
-                            <select>
-                                <option value="" selected data-default>choose Size</option>
+                            <select class="product_select">
+                                <option value="" selected data-default>Choose Size</option>
                                 <option value="s">S</option>
                                 <option value="m">M</option>
                                 <option value="l">L</option>
                             </select> <br>
                             <button>Add to cart</button>
                         </form>
-                        <p>Description: <%= product_by_id.product_text %></p>
+                        <p class="product_describtion">Description: <%= product_by_id.product_text %></p>
                     </div>
                 </div>
                 
