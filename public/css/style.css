@@ -843,21 +843,18 @@ footer{
    color: #f71f07;
    font-weight: 600;
 }
-.product_card i{
-    color: #d9680b;
-    text-align: left !important;
-}
+
 .helpDisk{
     display: flex;
     justify-content: space-between;
 }
 .fa-thumbs-up{
-    color: #f71f07 !important;
+    color: #d9680b !important;
     border: 1px solid #bdc3c7;
     padding: 6px;
 }
 .fa-heart{
-    color: #d9680b;
+    color: #f71f07;
     border: 1px solid #bdc3c7;
     padding: 6px;
     margin-right: 6px;
