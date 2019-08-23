@@ -753,6 +753,12 @@ footer{
 .sp__color__container {
     display: flex;
 }
+.product_describtion{
+    margin-top: 2em;
+}
+.product_select{
+    margin: .5em 0 .5em 0;
+}
 
 /* xxx */
 .product_card{
